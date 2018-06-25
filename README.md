@@ -2,8 +2,8 @@
 Created by Vince Chang
 
 - Need tools to ***configure*** and tools to ***provision***
-I used AWS to host a Virtual Machine and configuring Chef. I created an
-organization on Chef.io and created cookbooks and pushed it onto Chef.io.
+I used AWS to host a Virtual Machine and configured Chef. I created an
+organization on Chef.io where I created and pushed cookbooks.
 
 
 #### Chef
@@ -44,16 +44,15 @@ specified, if any, and look for the verifier framework we are using (serverspec)
   - it is a chef utility that complies all the system information
   - can access the information using the node object in recipes
 - `knife` : manipulating the chef server remotely
-
 `knife bootstrap ip-172-31-16-158.us-west-2.compute.internal -i ~/vccentos.pem -u vincechang -N node1`
   - : gets the chef node up and running on the new VM
 
 
 #### Terraform
 - Terraform is a provisioner, this creates the infrastructure, Chef on the other
-hand will configure what has been provisioned.
+hand will configure what has been provisioned
 - Command line tool
   1. `terraform init`:  sets up
-  2. `terraform plan`: shows what Terraform is going to do when you execute, doesn't do
-  it, just validates what I want to do
+  2. `terraform plan`: shows what Terraform is going to do when you execute,
+   doesn't do it, just validates what I want to do
   3. `terraform apply`: executes the script itself
