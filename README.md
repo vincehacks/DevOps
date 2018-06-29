@@ -1,4 +1,4 @@
-# devOps
+# DevOps
 Created by Vince Chang
 
 - Need tools to ***configure*** and tools to ***provision***
